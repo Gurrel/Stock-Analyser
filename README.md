@@ -37,7 +37,7 @@ https://github.com/user-attachments/assets/c44d59ca-736d-4224-849a-df855be4a338
 
 <h2>Usage</h2>
 <p>Run the script to launch the GUI:</p>
-<pre><code>python main.py</code></pre>
+<pre><code>python stockAnalyser.py</code></pre>
 <p>In the GUI, you can:</p>
 <ul>
     <li>Perform technical analysis on a stock.</li>
