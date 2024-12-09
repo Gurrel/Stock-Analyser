@@ -2,13 +2,16 @@
 # Date: 25-03-2024
 # Revision date: 18-04-2024
 
+import os
+from dotenv import load_dotenv
 import requests
 from getBusinessDayDates import business_day_one_month_ago, last_business_day
 import pandas
 import time
 from tkinter import *
 
-API_KEY = 'nVUyzXwpWmFk9yLMMxD0nfq6gXlhI1IH'  # API key for the API polygon.io
+load_dotenv()
+API_KEY = os.getenv('API_KEY')  # API key for the API polygon.io
 INDEX_SYMBOL = 'SPY'  # This is the ticker for the index (SPDR S&P 500 ETF Trust)
 unable_to_get_data = False  # If there was a problem getting data from the API this will be set to True
 start_time_status_code_429 = 0  # Gets the time whenever a (status code 429 = data rate limit) happens
